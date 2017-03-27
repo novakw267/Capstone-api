@@ -12,6 +12,7 @@
 ## Api Routes
 
 ## Installation Instructions
+1) Bundle install
 
 ## Technology
 
