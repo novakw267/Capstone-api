@@ -48,6 +48,6 @@ class BlogsController < OpenReadController
 
   # Only allow a trusted parameter "white list" through.
   def blog_params
-    params.require(:blog).permit(:Title, :Subject, :Body, :Author)
+    params.require(:blog).permit(:title, :subject, :body, :author)
   end
 end
