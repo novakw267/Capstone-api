@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-class CommentsController < ApplicationController
+class CommentsController < OpenReadController
   before_action :set_comment, only: [:show, :update, :destroy]
 
   # GET /comments
@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
 
   # POST /comments
   def create
-    @comment = Comment.new(comment_params)
+    @comment = current_user.comments.build(comment_params)
 
     if @comment.save
       render json: @comment, status: :created, location: @comment
