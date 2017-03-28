@@ -8,8 +8,8 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Token token=$TOKEN" \
   --header "Content-Type: application/json" \
   --data '{
-    "blog": {
-      "author": "'"${AUTHOR}"'"
+    "comment": {
+      "author": "'"${AUTHOR}"'",
       "idea": "'"${IDEA}"'"
     }
   }'
