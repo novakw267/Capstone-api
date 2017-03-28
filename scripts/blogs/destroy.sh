@@ -4,5 +4,5 @@ API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/blogs/${ID}"
 curl "${API}${URL_PATH}" \
   --include \
-  --request DELETE #\
+  --request DELETE \
   --header "Authorization: Token token=$TOKEN"
