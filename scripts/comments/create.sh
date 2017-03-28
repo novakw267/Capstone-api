@@ -10,7 +10,8 @@ curl "${API}${URL_PATH}" \
   --data '{
     "comment": {
       "author": "'"${AUTHOR}"'",
-      "idea": "'"${IDEA}"'"
+      "idea": "'"${IDEA}"'",
+      "blog_id": "'"${BLOG_ID}"'"
     }
   }'
 
